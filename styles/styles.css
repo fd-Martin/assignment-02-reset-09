@@ -12,9 +12,28 @@ p {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
-    text-align: left;
     padding: 20px 0;
-    width: 60%;
+
+}
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+h6 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 .section {
@@ -23,7 +42,8 @@ p {
 
 }
 
-.header {
+.header,
+.meet__team {
     padding: 20px 0;
     background: black;
 }
@@ -100,10 +120,74 @@ p {
     color: white;
 }
 
+/* meet team  */
+.meet__container__one {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
 
+.meet__container__two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
 
+.trainer-card {
+    width: 90%;
+    margin: 15px auto;
+    height: 372px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    background-blend-mode: overlay;
+}
 
+.trainer-card p {
+    padding: 5px 0;
+}
 
+.trainer-1 {
+    background-image: url(../images/trainer1.png);
+}
+
+.trainer-2 {
+    background-image: url(../images/trainer2.png);
+}
+
+.trainer-3 {
+    background-image: url(../images/trainer3.png);
+}
+
+.trainer-4 {
+    background-image: url(../images/trainer4.png);
+}
+
+.trainer-5 {
+    background-image: url(../images/trainer5.png);
+}
+
+.trainer-6 {
+    background-image: url(../images/trainer6.png);
+}
+
+.trainer-intro {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+/* footer  */
 .footer__container {
     display: grid;
     width: 90%;
@@ -111,6 +195,7 @@ p {
     gap: 5px;
     margin: 0 auto;
     padding: 20px 0;
+    text-align: left;
 }
 
 .footer__container__one {
@@ -132,8 +217,6 @@ p {
     margin-bottom: 20px;
 }
 
-
-
 .footer__container h4 {
     color: rgb(255, 255, 255);
     font-family: Inter;
@@ -142,6 +225,11 @@ p {
     line-height: 120%;
     letter-spacing: 0%;
     text-align: left;
+}
+
+.footer__container p {
+    text-align: left;
+    width: 70%;
 }
 
 .footer__container ul {
@@ -163,11 +251,10 @@ p {
 }
 
 .footer__copyright {
-    padding-top: 20px;
+    padding: 30px 0 10px 0;
     width: 90%;
     margin: 0 auto;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
-
 }
 
 .footer__copyright h5 {
@@ -180,19 +267,18 @@ p {
     text-align: center;
 }
 
-
-
-
-
-
 @media screen and (min-width:577px) and (max-width: 992px) {
-
     .footer__container {
         display: grid;
         width: 90%;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
         margin: 0 auto;
+    }
+
+    .footer__container p {
+        text-align: left;
+        width: 75%;
     }
 
     .footer__container__one {
@@ -204,7 +290,6 @@ p {
     .footer__container__three {
         padding: 20px 5px;
     }
-
 }
 
 @media screen and (max-width:576px) {
@@ -217,6 +302,20 @@ p {
         display: flex;
     }
 
+
+
+    .meet__container__one {
+        width: 80%;
+    }
+
+    .meet__container__two {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-card {
+        height: 372px;
+    }
+
     .footer__container {
         display: grid;
         width: 90%;
@@ -225,10 +324,14 @@ p {
         margin: 0 auto;
     }
 
+    .footer__container p {
+        text-align: left;
+        width: 85%;
+    }
+
     .footer__container__one,
     .footer__container__two,
     .footer__container__three {
         padding: 15px 2px;
     }
-
 }
