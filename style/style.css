@@ -5,6 +5,11 @@
     font-family: "Inter";
 }
 
+@font-face {
+    font-family: Miama;
+    src: url(../font/Miama.ttf);
+}
+
 body {
     background-color: black;
 }
@@ -17,6 +22,26 @@ p {
     line-height: 24px;
     letter-spacing: 0.3px;
     padding: 20px 0;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.style {
+    font-family: Miama;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 1px;
+    letter-spacing: 0%;
+    text-align: left;
 }
 
 h2 {
@@ -105,7 +130,7 @@ h6 {
 
 .navbar__tab__pc ul {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 39px;
+    border-radius: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -140,6 +165,131 @@ h6 {
 .navbar__mobile i {
     font-size: 18px;
     color: white;
+}
+
+/* banner  */
+.banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    width: 90%;
+    margin: 35px auto 0;
+    padding: 25px;
+}
+
+.banner__container .banner__left {
+    width: 50%;
+}
+
+.banner__container .banner__left .banner__left__content {
+    width: 80%;
+}
+
+.banner__container .banner__left .banner__left__button {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner__container .banner__left .banner__left__button button {
+    padding: 16px 25px;
+    border-radius: 42px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.banner__container .banner__left .join {
+    margin: 20px 20px 20px 0;
+    border: 1px solid transparent;
+    background: rgb(230, 83, 60);
+}
+
+.banner__container .banner__left .download {
+    margin: 20px 20px 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+}
+
+.banner__container .banner__left .join {
+    margin: 20px 20px 20px 0;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid transparent;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.banner__container .banner__right {
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.banner__container .banner__right .video__tutorial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(48, 48, 48, 0.54);
+    width: 200px;
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+.banner__container .banner__right .workout__video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(48, 48, 48, 0.54);
+    width: 180px;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    border-radius: 10px;
+}
+
+.banner__container .banner__right .video__tutorial .video__tutorial__dot {
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.banner__container .banner__right h3 {
+    padding: 0;
+    font-size: 20px;
+}
+
+.banner__container .banner__right p {
+    padding: 0;
+}
+
+.banner__container .banner__right .banner__right__img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.banner__container .banner__right .banner__right__img img {
+    width: 100%;
+    height: 600px;
 }
 
 /* change__your__habit  */
@@ -504,6 +654,74 @@ h6 {
 
 @media screen and (min-width:577px) and (max-width: 992px) {
 
+
+    h1 {
+        font-size: 64px;
+    }
+
+    .style {
+        font-size: 120px;
+    }
+
+    /* banner  */
+    .banner__container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .banner__container .banner__left {
+        width: 80%;
+    }
+
+    .banner__container .banner__left .banner__left__content {
+        width: 100%;
+    }
+
+    .banner__container .banner__left .banner__left__button button {
+        padding: 16px 20px;
+        font-size: 16px;
+    }
+
+    .banner__container .banner__right {
+        width: 100%;
+    }
+
+    .banner__container .banner__right .video__tutorial {
+        width: 180px;
+        bottom: 60px;
+        left: 5%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .banner__container .banner__right .workout__video {
+        width: 180px;
+        top: 60px;
+        right: 15%;
+        padding: 5px;
+    }
+
+    .banner__container .banner__right .video__tutorial .video__tutorial__dot {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .banner__container .banner__right h3 {
+        font-size: 20px;
+    }
+
+
+    .banner__container .banner__right .banner__right__img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .banner__container .banner__right .banner__right__img img {
+        width: 100%;
+        height: 600px;
+    }
+
     .habit__container__two {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -518,7 +736,6 @@ h6 {
 
     .habit__container__three__right img {
         width: 100%;
-        /* height: 100%; */
     }
 
     .habit__container__three__right .tab {
@@ -588,6 +805,13 @@ h6 {
 }
 
 @media screen and (max-width:576px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    .style {
+        font-size: 100px;
+    }
 
     .navbar__tab__pc {
         display: none;
@@ -596,12 +820,71 @@ h6 {
     .navbar__mobile {
         visibility: visible;
         display: flex;
+        /* align-items: center;
+        justify-content: space-between; */
+    }
+
+    .banner__container {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .banner__container .banner__left {
+        width: 100%;
+    }
+
+    .banner__container .banner__right {
+        width: 100%;
+    }
+
+    .banner__container .banner__left .banner__left__button {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .banner__container .banner__left .banner__left__button button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .banner__container .banner__right .video__tutorial {
+        width: 160px;
+        bottom: 50px;
+        left: 0px;
+        padding: 5px;
+    }
+
+    .banner__container .banner__right .workout__video {
+        width: 160px;
+        top: 50px;
+        right: 0px;
+        padding: 5px;
+    }
+
+    .banner__container .banner__right .video__tutorial .video__tutorial__dot {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .banner__container .banner__right h3 {
+        font-size: 18px;
+    }
+
+
+    .banner__container .banner__right .banner__right__img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .banner__container .banner__right .banner__right__img img {
+        width: 100%;
+        height: 550px;
     }
 
     .habit__container__two {
         grid-template-columns: repeat(1, 1fr);
     }
-
 
     .habit__container__two__content p,
     .habit__container__two__content {
