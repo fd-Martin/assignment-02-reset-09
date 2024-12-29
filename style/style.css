@@ -86,13 +86,14 @@ h6 {
     margin: 0 auto;
 }
 
-.header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+.header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
     padding: 20px 0;
 }
 
 .habit,
 .bmi__calculator1,
+.pricing,
 .meet__team {
     padding: 20px 0;
     background: black;
@@ -452,7 +453,6 @@ h6 {
 .bmi__calculator2__right {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
     width: 55%;
     margin: 0 auto;
 }
@@ -508,6 +508,74 @@ h6 {
     line-height: 22px;
     letter-spacing: 0px;
     text-align: left;
+}
+
+
+/* pricing  */
+.pricing__container__one {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.pricing__container__two {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid red;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.pricing__container__card {
+    background-color: white;
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 25px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing__container__card .pricing__container__card__heading h4 {
+    color: #333333;
+
+}
+
+.pricing__container__card .pricing__container__card__heading .price-color {
+    color: #fb5b21dc;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.pricing__container__card .pricing__container__card__heading .month {
+    color: #a4a4a49e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.pricing__container__card ul {
+    list-style: none;
+}
+
+.pricing__container__card li {
+    margin: 15px 0;
+}
+
+.pricing__container__card button {
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+    background-color: transparent;
+    color: #888888;
+    border: 1px solid #fb5b21;
+    border-radius: 15px;
 }
 
 /* meet team  */
@@ -784,6 +852,15 @@ h6 {
         margin: 0 auto;
     }
 
+
+    .pricing__container__two {
+        flex-direction: column;
+    }
+
+    .pricing__container__card {
+        width: 75%;
+    }
+
     .footer__container {
         display: grid;
         width: 90%;
@@ -962,6 +1039,14 @@ h6 {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .pricing__container__two {
+        flex-direction: column;
+    }
+
+    .pricing__container__card {
+        width: 95%;
     }
 
     .meet__container__one {
