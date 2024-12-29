@@ -522,7 +522,6 @@ h6 {
 .pricing__container__two {
     width: 90%;
     margin: 0 auto;
-    border: 2px solid red;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: row;
