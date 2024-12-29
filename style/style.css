@@ -15,7 +15,7 @@ body {
 }
 
 p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
@@ -40,7 +40,6 @@ h1 {
     font-weight: 400;
     font-size: 150px;
     line-height: 1px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -50,7 +49,6 @@ h2 {
     font-size: 40px;
     font-weight: 900;
     line-height: 120%;
-    letter-spacing: 0%;
 }
 
 h3 {
@@ -59,7 +57,6 @@ h3 {
     font-size: 28px;
     font-weight: 900;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -77,7 +74,6 @@ h6 {
     font-size: 18px;
     font-weight: 900;
     line-height: 100%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -87,7 +83,7 @@ h6 {
 }
 
 .header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgb(119, 119, 119, 0) 100%);
     padding: 20px 0;
 }
 
@@ -105,8 +101,6 @@ h6 {
     background: rgb(26, 26, 26);
 }
 
-
-/* navbar section  */
 .navbar__tab__pc,
 .navbar__mobile {
     width: 90%;
@@ -128,19 +122,17 @@ h6 {
     font-size: 36px;
     font-weight: 800;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
     font-style: italic;
 }
 
 .navbar__tab__pc ul {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: rgb(255, 255, 255, 0.1) solid 1px;
     border-radius: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 35;
     padding: 4px;
     list-style: none;
 }
@@ -172,7 +164,6 @@ h6 {
     color: white;
 }
 
-/* banner  */
 .banner__container {
     display: flex;
     align-items: center;
@@ -204,33 +195,33 @@ h6 {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: left;
 }
 
 .banner__container .banner__left .join {
     margin: 20px 20px 20px 0;
-    border: 1px solid transparent;
+    border: transparent solid 1px;
     background: rgb(230, 83, 60);
 }
 
 .banner__container .banner__left .download {
     margin: 20px 20px 20px 0;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: rgb(255, 255, 255, 0.5) solid 1px;
     background: transparent;
 }
 
 .banner__container .banner__left .join {
     margin: 20px 20px 20px 0;
     padding: 16px 40px 16px 40px;
-    border: 1px solid transparent;
+    border: transparent solid 1px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: left;
 }
 
@@ -246,8 +237,8 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(48, 48, 48, 0.54);
+    border: rgb(255, 255, 255, 0.1) solid 1px;
+    background-color: rgb(48, 48, 48, 0.54);
     width: 200px;
     position: absolute;
     bottom: 60px;
@@ -261,8 +252,8 @@ h6 {
     align-items: center;
     justify-content: flex-start;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(48, 48, 48, 0.54);
+    border: rgb(255, 255, 255, 0.1) solid 1px;
+    background-color: rgb(48, 48, 48, 0.54);
     width: 180px;
     position: absolute;
     top: 60px;
@@ -297,7 +288,6 @@ h6 {
     height: 500px;
 }
 
-/* change__your__habit  */
 .habit__container__one {
     text-align: center;
     width: 60%;
@@ -323,7 +313,7 @@ h6 {
 }
 
 .habit__container__two__content img {
-    border: 3px solid rgba(110, 110, 110, 0.355);
+    border: rgb(110, 110, 110, 0.355) solid 3px;
     border-radius: 50%;
     width: 65%;
     margin-bottom: 15px;
@@ -336,7 +326,7 @@ h6 {
     width: 90%;
     margin: 0 auto;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(255, 255, 255, 0.1);
     padding: 25px;
 }
 
@@ -360,14 +350,14 @@ h6 {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 16px 40px 16px 40px;
-    border: 1px solid transparent;
+    border: transparent solid 1px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: left;
 }
 
@@ -390,13 +380,11 @@ h6 {
     display: none;
 }
 
-/* .bmi__calculator  */
 .bmi__calculator1__container p,
 .bmi__calculator2__right p {
     width: 80%;
 }
 
-/* .bmi__calculator1 */
 .bmi__calculator1__container {
     text-align: left;
     width: 60%;
@@ -404,7 +392,6 @@ h6 {
     padding: 60px 0;
 }
 
-/* .bmi__calculator2 */
 .bmi__calculator2__container {
     display: flex;
     flex-direction: row;
@@ -418,7 +405,6 @@ h6 {
 .bmi__calculator2__left {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
     width: 40%;
 }
 
@@ -429,24 +415,22 @@ h6 {
 }
 
 .bmi__calculator2__left th {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: rgb(255, 255, 255, 0.1) solid 1px;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 500;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
     padding: 15px;
 }
 
 .bmi__calculator2__left td {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: rgb(255, 255, 255, 0.1) solid 1px;
     padding: 15px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255, 0.5);
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -472,13 +456,13 @@ h6 {
 .bmi__calculator2__right select {
     width: 100%;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.4);
+    background: rgb(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255, 0.4);
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     padding: 12px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: rgb(255, 255, 255, 0.2) solid 1px;
     margin: 5px 0;
     text-align: left;
 }
@@ -491,27 +475,25 @@ h6 {
 
 .bmi__calculator2__right .form__row option,
 .bmi__calculator2__right option {
-    background: rgba(0, 0, 0, 0.7);
-    color: rgba(255, 255, 255, 0.4);
+    background: rgb(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255, 0.4);
     padding: 10px;
 }
 
 .bmi__calculator2__right .submit {
     margin-top: 20px;
     padding: 16px 40px 16px 40px;
-    border: 1px solid transparent;
+    border: transparent solid 1px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: left;
 }
 
-
-/* pricing  */
 .pricing__container__one {
     text-align: center;
     width: 60%;
@@ -522,7 +504,7 @@ h6 {
 .pricing__container__two {
     width: 90%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(255, 255, 255, 0.1);
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -544,7 +526,6 @@ h6 {
 
 .pricing__container__card .pricing__container__card__heading h4 {
     color: #333333;
-
 }
 
 .pricing__container__card .pricing__container__card__heading .price-color {
@@ -573,11 +554,10 @@ h6 {
     padding: 15px;
     background-color: transparent;
     color: #888888;
-    border: 1px solid #fb5b21;
+    border: #fb5b21 solid 1px;
     border-radius: 15px;
 }
 
-/* meet team  */
 .meet__container__one {
     text-align: center;
     width: 60%;
@@ -592,7 +572,7 @@ h6 {
     width: 90%;
     margin: 0 auto 60px auto;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(255, 255, 255, 0.1);
     padding: 15px 0;
 }
 
@@ -604,7 +584,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 0.3);
     border-radius: 18px;
     background-blend-mode: overlay;
 }
@@ -643,7 +623,6 @@ h6 {
     left: 15px;
 }
 
-/* footer  */
 .footer__container {
     display: grid;
     width: 90%;
@@ -657,7 +636,6 @@ h6 {
 .footer__container__one {
     display: flex;
     flex-direction: column;
-    gap: 20;
 }
 
 .footer__container__one a {
@@ -666,7 +644,6 @@ h6 {
     font-size: 70px;
     font-weight: 800;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
     text-decoration: none;
     font-style: italic;
@@ -679,7 +656,6 @@ h6 {
     font-size: 32px;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -697,12 +673,11 @@ h6 {
 }
 
 .footer__container li {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 23px;
     font-weight: 400;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -710,11 +685,11 @@ h6 {
     padding: 30px 0 10px 0;
     width: 90%;
     margin: 0 auto;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgb(255, 255, 255, 0.1);
 }
 
 .footer__copyright h5 {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
@@ -723,9 +698,7 @@ h6 {
     text-align: center;
 }
 
-@media screen and (min-width:577px) and (max-width: 992px) {
-
-
+@media screen and (min-width: 577px) and (max-width: 992px) {
     h1 {
         font-size: 64px;
     }
@@ -734,7 +707,6 @@ h6 {
         font-size: 120px;
     }
 
-    /* banner  */
     .banner__container {
         flex-direction: column;
         padding: 10px;
@@ -781,7 +753,6 @@ h6 {
     .banner__container .banner__right h3 {
         font-size: 20px;
     }
-
 
     .banner__container .banner__right .banner__right__img {
         width: 60%;
@@ -851,7 +822,6 @@ h6 {
         margin: 0 auto;
     }
 
-
     .pricing__container__two {
         flex-direction: column;
     }
@@ -884,7 +854,7 @@ h6 {
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     h1 {
         font-size: 52px;
     }
@@ -900,13 +870,11 @@ h6 {
     .navbar__mobile {
         visibility: visible;
         display: flex;
-        /* align-items: center;
-        justify-content: space-between; */
     }
 
     .banner__container {
         flex-direction: column;
-        padding: 0px;
+        padding: 0;
     }
 
     .banner__container .banner__left {
@@ -930,14 +898,14 @@ h6 {
     .banner__container .banner__right .video__tutorial {
         width: 160px;
         bottom: 50px;
-        left: 0px;
+        left: 0;
         padding: 5px;
     }
 
     .banner__container .banner__right .workout__video {
         width: 160px;
         top: 50px;
-        right: 0px;
+        right: 0;
         padding: 5px;
     }
 
@@ -950,7 +918,6 @@ h6 {
     .banner__container .banner__right h3 {
         font-size: 18px;
     }
-
 
     .banner__container .banner__right .banner__right__img {
         width: 80%;
@@ -978,12 +945,12 @@ h6 {
     .habit__container__three {
         display: flex;
         flex-direction: column;
-        gap: 0px;
+        gap: 0;
     }
 
     .habit__container__three__left {
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .habit__container__three__left p {
